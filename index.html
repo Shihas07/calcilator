@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+  <div class="container">
+      <h1 class="header">INCOME-EXPENSE-CALCULATOR</h1>
+
+
+      <div class="form">
+         <div class="left">
+           <h1 id="ab">INCOME</h1>
+
+            <div class="left-1">
+               <div class="div">
+                <input type="text" placeholder="catgorey" id="catgorey-1"><br>
+            <span id="error-1"></span>
+               </div>
+               <div class="div">
+                <input type="number" placeholder="income" id="input-income"><br>
+            <span id="error-2"></span>
+               </div>
+               <div class="div">
+                <button id="click" type="button" onclick="functionClick()">Add</button><br></div>
+            </div>
+            
+ 
+            
+            
+           
+           
+           
+              <p >TOTAL_INCOME</p>
+              <button id="total-1"></button>
+              
+
+
+        </div>
+
+        <div class="right">
+          <h1 id="ab">EXPENSE</h1>
+
+             
+            <div class="left-1">
+               <div class="div">
+                <input type="text" placeholder="catgorey" id="details"><br>
+            <span id="error-3"></span>
+               </div>
+               <div class="div">
+                <input type="number" placeholder="expense" id="input-expense"><br>
+            <span id="error-4"></span>
+               </div>
+               <div class="div">
+                <button id="click" type="button" onclick="functionexpense()" >Add</button><br></div>
+            </div>
+            
+               <div class="expense-1">           
+            <p>TOTAL-EXPENSE</p>
+            <button id="expensebtn" ></button>
+
+          </div> 
+
+
+      </div>
+                
+         
+
+
+        
+
+
+      </div>
+
+
+           <div class="table-container">
+             <!-- <table>
+                <tr>
+                  <th>catgorey</th>
+                  <th>income</th>
+
+                </tr>
+                  <tr>
+                    <td>hlo</td>
+                    <td>hi</td>
+                  </td>
+             </table> --> 
+
+
+             <table id="myTable">
+              <thead>
+              <tr>
+                <th>CATEGORY</th>
+                <th>INCOME</th>
+                <!-- <th>CATGOREY</th>
+                <th>EXPENSE</th> -->
+              
+              </tr>
+            </thead>
+            <tbody id="js-table-income"></tbody>
+            
+            </table>   
+
+            <div class="table-container">
+              <!-- <table>
+                 <tr>
+                   <th>catgorey</th>
+                   <th>income</th>
+ 
+                 </tr>
+                   <tr>
+                     <td>hlo</td>
+                     <td>hi</td>
+                   </td>
+              </table> --> 
+ 
+ 
+              <table id="Table">
+               <thead>
+               <tr>
+                 <th>CATEGORY</th>
+                 <th>expense</th>
+                 <!-- <th>CATGOREY</th>
+                 <th>EXPENSE</th> -->
+               
+               </tr>
+             </thead>
+             <tbody id="js-table-expense"></tbody>
+             
+             </table>   
+ 
+
+         </div>
+
+            
+  </div>
+  <div class="balance">
+    <p>BALANCE</p>
+    <button id="balance"></button>
+</div>
+
+
+<div class="chartClass">
+  <canvas id="myChart"></canvas>
+</div>
+
+
+
+
+
+
+  
+  
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="calc.js"></script>
+</body>
+</html>
